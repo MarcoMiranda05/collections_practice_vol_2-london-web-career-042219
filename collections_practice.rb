@@ -6,4 +6,3 @@ def begins_with_r(input)
   end
   return true
 end
-
