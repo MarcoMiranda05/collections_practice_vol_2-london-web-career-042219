@@ -12,3 +12,7 @@ end
 def first_wa(x)
   x.find { |array| array.to_s.start_with?("wa") }
 end
+
+def remove_non_strings(x)
+  x.select { |array| array.class == String }
+end
