@@ -10,5 +10,5 @@ def contain_a(x)
 end
 
 def first_wa(x)
-  x.collect { |array| array.to_s.start_with?("wa") }
+  x.find { |array| array.to_s.start_with?("wa") }
 end
