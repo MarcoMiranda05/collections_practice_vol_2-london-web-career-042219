@@ -40,11 +40,8 @@ def count_elements(input)
   end
 end
 
-require 'pry'
-
- def merge_data(keys, data)
+def merge_data(keys, data)
   keys.collect do |key|
-    binding.pry
     key.merge(data[0][key[:first_name]])
   end
 end
