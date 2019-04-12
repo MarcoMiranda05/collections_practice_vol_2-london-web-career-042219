@@ -4,3 +4,7 @@ def begins_with_r(x)
   end
   return true
 end
+
+def contain_a(x)
+  x.select { |array| array.include?("a") }
+end
