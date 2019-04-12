@@ -34,3 +34,8 @@ def count_elements(input)
       result << [ member, 1 ]
     end
   end
+
+  result.collect do |list_item|
+    list_item[0].merge({count: list_item[1]})
+  end
+end
