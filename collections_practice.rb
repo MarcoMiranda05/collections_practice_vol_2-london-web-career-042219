@@ -49,3 +49,15 @@ end
 def find_cool(x)
   x.select { |hash| hash[:temperature] == "cool" }
 end
+
+def organize_schools(input)
+
+   result = {}
+
+   input.each do | key, val |
+    result[val[:location]] = [] if result[val[:location]] == nil
+    result[val[:location]] << key
+  end
+
+   result
+end
