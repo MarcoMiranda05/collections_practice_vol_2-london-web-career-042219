@@ -39,3 +39,12 @@ def count_elements(input)
     list_item[0].merge({count: list_item[1]})
   end
 end
+
+require 'pry'
+
+ def merge_data(keys, data)
+  keys.collect do |key|
+    binding.pry
+    key.merge(data[0][key[:first_name]])
+  end
+end
